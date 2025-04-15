@@ -11,6 +11,7 @@ services:
   - type: web
     name: 'hikma-health-backend'
     runtime: python
+    region: Frankfurt
     # Uncomment if you want to deploy to the free tier first.
     # NOTE: free tier has degraded performance making it unusable in real world settings
     # plan: free
@@ -48,6 +49,7 @@ databases:
     # NOTE: FREE DATABASES ARE DELETED AFTER 90 DAYS!!! Remember NEVER to use a free database after for real patient data.
     # plan: free
     databaseName: hhdb
+    region: Frankfurt
     user: hikma
     # highAvailability:
       # enabled: true
